@@ -309,6 +309,7 @@ static ssize_t ksu_wrapper_dedupe_file_range(struct file *src_file, u64 loff,
 	return -EINVAL;
 }
 #endif
+#endif
 
 static int ksu_wrapper_release(struct inode *inode, struct file *filp) {
 	ksu_delete_file_wrapper(filp->private_data);
